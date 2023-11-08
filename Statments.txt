@@ -1,0 +1,22 @@
+CREATE DATABASE integrador_cac;
+USE integrador_cac;
+CREATE TABLE oradores(
+	id_orador int PRIMARY KEY AUTO_INCREMENT,
+    nombre VARCHAR(25) NOT NULL,
+    apellido VARCHAR(25) NOT NULL,
+    mail VARCHAR(35) UNIQUE NOT NULL,
+    tema VARCHAR(25),
+    fecha_alta DATE);
+    
+INSERT INTO oradores(nombre,apellido,mail,tema,fecha_alta) VALUES ('Jorge', 'Ramallo','JRamallo@mail.com','JavaScript',"2023-08-17");
+INSERT INTO oradores(nombre,apellido,mail,tema,fecha_alta) VALUES ('Roberto', 'Garcia','RGarcia@mail.com','React',"2023-09-23");
+INSERT INTO oradores(nombre,apellido,mail,tema,fecha_alta) VALUES ('Maria', 'Perez','MPerez@mail.com','Angular',"2023-09-15");
+INSERT INTO oradores(nombre,apellido,mail,tema,fecha_alta) VALUES ('Mariela', 'Garcia','Mari46@mail.com','JavaScript',"2023-10-17");
+INSERT INTO oradores(nombre,apellido,mail,tema,fecha_alta) VALUES ('Matias', 'Lopez','MLopez@mail.com','Python',"2023-10-18");
+INSERT INTO oradores(nombre,apellido,mail,tema,fecha_alta) VALUES ('Patricia', 'Lopez','Patri_lopez@mail.com','CSS-Bootstrap',"2023-10-29");
+INSERT INTO oradores(nombre,apellido,mail,tema,fecha_alta) VALUES ('Roberto', 'Zuniga','RZuniga@mail.com','Angular',"2023-08-16");
+INSERT INTO oradores(nombre,apellido,mail,tema,fecha_alta) VALUES ('Juan', 'Romero','Juan.Romero@mail.com','React',"2023-08-25");
+INSERT INTO oradores(nombre,apellido,mail,tema,fecha_alta) VALUES ('Susana', 'Gimenez','Su_gimenez@mail.com','Java',"2023-11-10");
+INSERT INTO oradores(nombre,apellido,mail,tema,fecha_alta) VALUES ('Luis', 'Martinez','Lmartinez@mail.com','Startupes',"2023-10-10");
+
+select * from oradores;
